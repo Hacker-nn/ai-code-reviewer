@@ -1,26 +1,11 @@
-name: AI Code Review
-
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-
-jobs:
-  review:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+- name: Debug file structure
+        run: |
+          echo "=== Root files ==="
+          ls -la
+          echo "=== src/ files ==="
+          ls -la src/
+          echo "=== Python path ==="
+          python -c "import sys; print(sys.path)"
 
       - name: Run AI review
         env:
