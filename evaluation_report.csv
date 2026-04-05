@@ -1,0 +1,21 @@
+pr_key,pr_number,bug_type,has_bug,bot_commented,verdict,severities,bug_caught,false_positive,correct
+pr01,2,hardcoded password,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, LOW",True,False,True
+pr02,3,SQL injection,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, LOW, STYLE",True,False,True
+pr03,4,divide by zero,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, STYLE",True,False,True
+pr04,5,no input validation,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, STYLE",True,False,True
+pr05,6,infinite loop,True,True,REQUEST_CHANGES,"CRITICAL, HIGH, MEDIUM, STYLE",True,False,True
+pr06,7,unused imports,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, STYLE",True,False,True
+pr07,8,mutable default,True,True,REQUEST_CHANGES,"MEDIUM, STYLE",True,False,True
+pr08,9,swallowed exception,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, STYLE",True,False,True
+pr09,10,hardcoded secrets,True,True,REQUEST_CHANGES,"CRITICAL, LOW",True,False,True
+pr10,11,no error handling,True,True,REQUEST_CHANGES,"CRITICAL, HIGH, MEDIUM, STYLE",True,False,True
+pr11,12,XSS vulnerability,True,True,REQUEST_CHANGES,"CRITICAL, STYLE",True,False,True
+pr12,13,insecure random,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, LOW, STYLE",True,False,True
+pr13,14,memory leak,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, LOW, STYLE",True,False,True
+pr14,15,race condition,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, LOW, STYLE",True,False,True
+pr15,16,plaintext password,True,True,REQUEST_CHANGES,"CRITICAL, HIGH, MEDIUM, STYLE",True,False,True
+pr16,17,none,False,True,REQUEST_CHANGES,"HIGH, MEDIUM, LOW, STYLE",False,True,False
+pr17,18,none,False,True,REQUEST_CHANGES,"MEDIUM, LOW, STYLE",False,True,False
+pr18,19,global variable abuse,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, LOW, STYLE",True,False,True
+pr19,20,type confusion,True,True,REQUEST_CHANGES,"CRITICAL, MEDIUM, LOW, STYLE",True,False,True
+pr20,21,debug code left in,True,True,REQUEST_CHANGES,"CRITICAL, HIGH, MEDIUM, STYLE",True,False,True
