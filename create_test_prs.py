@@ -214,6 +214,7 @@ def create_test_prs():
         run(f"git checkout -b {branch}")
 
         # write the file
+        os.makedirs("test_files", exist_ok=True)
         filepath = f"test_files/{filename}"
         with open(filepath, "w") as f:
             f.write(code.strip())
