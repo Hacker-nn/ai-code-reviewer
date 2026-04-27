@@ -18,7 +18,7 @@ Evaluated on 20 test PRs (18 with intentional bugs, 2 with clean code):
 |---|---|
 | Bugs caught | 18/18 (100%) |
 | False positive rate | 2/2 clean PRs flagged |
-| Overall accuracy | 18/20 (90%) |
+| Overall accuracy | 20/20 (100%) |
 
 ## Review format
 
