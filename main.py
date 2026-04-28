@@ -18,6 +18,9 @@ def review_with_groq(diff, api_key):
     url = "https://api.groq.com/openai/v1/chat/completions"
     headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
     system_prompt = """You are a senior software engineer doing a code review.
+    If the code is clean and follows good practices, do not invent issues.
+Only report real, meaningful problems.
+Avoid generic suggestions like "add comments" or "add tests".
 Analyze the git diff and respond in this exact format:
 
 ## Summary
